@@ -1,0 +1,4 @@
+numpy
+pandas
+nlkt
+sudo apt-get install python3-tk
