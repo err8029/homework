@@ -63,7 +63,6 @@ def main():
         print('sth went wrong in data grabbing and processing')
         print(error)
 
-    #algorithm 2: NLTK
 
     obj_algorithm2.exec()
     obj_algorithm1.exec()
