@@ -14,7 +14,7 @@
   <p align="center"> frequency distribution of words for positive reviews (categories obtained by lemmatization)</p>
 </p>
 
-- The text processing pipeline, is the same for both algorithms (except the extra use of a tokenizer before the execution of NB) : 
+- The text processing pipeline, is the same for both algorithms) : 
 
 	1. Remove punctuation: With the information about the most used punctuation elements in the text, those are filtered.
 
@@ -22,6 +22,7 @@
 
 	3. Remove the Stopwords: A personalized file is used in order to remove the Stopwords.
 	4. Lemmatization: Obtain the lemmas for every of the final words.
+	5. Tokenize words for each classifier
 
 **2. Why you have selected these two classification methods?**
 
