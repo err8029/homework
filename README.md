@@ -22,7 +22,7 @@
 
 	3. Remove the Stopwords: A personalized file is used in order to remove the Stopwords.
 	4. Lemmatization: Obtain the lemmas for every of the final words.
-	5. Tokenize words for each classifier
+	5. Tokenize lemmas for each classifier
 
 **2. Why you have selected these two classification methods?**
 
