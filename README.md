@@ -16,13 +16,13 @@
 
 - The text processing pipeline, is the same for both algorithms) : 
 
-	1. Remove punctuation: With the information about the most used punctuation elements in the text, those are filtered.
+	1. __*Remove punctuation:*__ With the information about the most used punctuation elements in the text, those are filtered.
 
-	2. Remove the least used words: Those words that are used less than 6 times in the whole text are marked and removed.
+	2. __*Remove the least used words:*__ Those words that are used less than 6 times in the whole text are marked and removed.
 
-	3. Remove the Stopwords: A personalized file is used in order to remove the Stopwords.
-	4. Lemmatization: Obtain the lemmas for every of the final words.
-	5. Tokenize lemmas for each classifier: Each classifier uses its own tokenizer
+	3. __*Remove the Stopwords:*__ A personalized file is used in order to remove the Stopwords.
+	4. __*Lemmatization:*__ Obtain the lemmas for every of the final words.
+	5. __*Tokenize lemmas for each classifier:*__ Each classifier uses its own tokenizer.
 
 **2. Why you have selected these two classification methods?**
 
