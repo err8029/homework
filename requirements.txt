@@ -2,3 +2,7 @@ numpy
 pandas
 nlkt
 sudo apt-get install python3-tk
+Counter
+matplotlib
+keras
+sklearn
