@@ -1,5 +1,5 @@
 # homework
-
+Run with python 3.5, read or execute requirements.txt first
 
 **1. Describe text processing pipeline you have selected.**
 - Statistical anlysis to determine the most used words, least used were also determined, but there are 6000 words aprox. with a 1 frequency. See the following figures for most used words:
@@ -31,7 +31,7 @@ On the other hand the chosen CNN, might seem more time consuming, but thanks to 
 
 **3. Compare selected classification methods. Which one is better? Why?**
 
-Both classifiers perform almost the same (86,47% CNN, 86,66% NB), I guess, even if CNN is really flexible it is a tough classifier to tune and perhaps with a different layer distribution or more hyperparameters (in the choosing dictionary), it could clearly outperform the NB. On the other hand, NB is, as seen in lots of papers, the most popular option in document analysis, as it can obtain good results in a decent time while being easy to adjust. 
+Both classifiers perform almost the same (86,64% CNN, 87,00% NB), I guess, even if CNN is really flexible it is a tough classifier to tune and perhaps with a different layer distribution or more hyperparameters (in the choosing dictionary), it could clearly outperform the NB. On the other hand, NB is, as seen in lots of papers, the most popular option in document analysis, as it can obtain good results in a decent time while being easy to adjust. 
 To sum it up, the NB is better, due to its fine tunning of hyperparameters and normally good performance in this field.
 
 **4. How would you compare selected classification methods if the dataset was imbalanced?**
@@ -59,4 +59,16 @@ Gathered pictures from the shell or plots, which summarize the obtained results 
   <img src="training_results/CNN_train_validation.png" width="550" title="hover text">
   <p align="center"> CNN training evolution plot)</p>
 </p>
+
+**Summary of results for all the tested classifiers**
+
+| Classifier                   | Test accuracy (%) |
+| ---------------------------- | ------------------|
+| multinomial NB               | 87.00             |
+| CNN                          | 86.64             |
+| SVM (suport vector machines) | 85.45             |  
+| NN                           | 84.73             |
+| logistic regression          | 83.12             |
+   
+
 
