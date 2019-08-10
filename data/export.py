@@ -97,11 +97,11 @@ class Export():
         #return two df, one for testing and the other for training, designed for the CNN
         #with embedding
 
-        neg_train=list_neg[len(list_neg)//3:]
-        neg_test=list_neg[:len(list_neg)//3]
+        neg_train=list_neg[len(list_neg)//4:]
+        neg_test=list_neg[:len(list_neg)//4]
 
-        pos_train=list_pos[len(list_pos)//3:]
-        pos_test=list_pos[:len(list_pos)//3]
+        pos_train=list_pos[len(list_pos)//4:]
+        pos_test=list_pos[:len(list_pos)//4]
 
         test=neg_test+pos_test
         train=neg_train+pos_train

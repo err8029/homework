@@ -69,12 +69,17 @@ def main():
     #and its parameters are easy to tune. Moreover it is a fast classifier that
     #obtains decent results and it is widely used in document analysis
     obj_algorithm2.train_rawDTM(data)
+    obj_algorithm2.train_normDTM(data)
+    obj_algorithm2.train_SVM(data)
+    obj_algorithm2.train_LR(data)
     #from alg group 2: CNN with embedding was chosen. Despite being the most
     #computationally intensive of all, this CNN allows the creation of a dictionary
     #with important words that afterwards will be used to parametrize the embedding
     #laer. Moreover, the hyperparameters are tested and chosen with the random
     #search algorithm, so that the best are chosen
+    obj_algorithm1.train_NN(data)
     obj_algorithm1.train_CNN_Emb(test,train,data)
+
 
 
 

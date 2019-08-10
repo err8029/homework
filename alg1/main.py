@@ -1,8 +1,6 @@
 #algorithm  group one: Deep learning aproaches
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import RandomizedSearchCV
 
 from keras.models import Sequential
@@ -70,14 +68,14 @@ class Alg1():
         plt.legend()
         plt.show()
 
-    def train_CNN(self,data):
+    def train_NN(self,data):
         #very basic NN (mpt a lot of layers)
         plt.style.use('ggplot')
 
         #get train and test
         self.get_train_test(data)
         #generate compile and print the NN model with ust a dense layer
-        input_dim = X_train.shape[1]  # Number of features
+        input_dim = self.X_train.shape[1]  # Number of features
         model = Sequential()
         model.add(layers.Dense(10, input_dim=input_dim, activation='relu'))
         model.add(layers.Dense(1, activation='sigmoid'))
@@ -86,12 +84,12 @@ class Alg1():
 
         #train the model with the previously generated set, returns history (evolution of the Training
         #during all the epochs)
-        history = model.fit(self.X_train, self.y_train, epochs=100, verbose=False, validation_data=(X_test, y_test), batch_size=10)
+        history = model.fit(self.X_train, self.y_train, epochs=100, verbose=False, validation_data=(self.X_test, self.y_test), batch_size=10)
 
         #print all the rellevant results (testing accuracy, training accuracy)
-        loss, accuracy = model.evaluate(X_train, y_train, verbose=False)
+        loss, accuracy = model.evaluate(self.X_train, self.y_train, verbose=False)
         print("Training Accuracy: {:.4f}".format(accuracy))
-        loss, accuracy = model.evaluate(X_test, y_test, verbose=False)
+        loss, accuracy = model.evaluate(self.X_test, self.y_test, verbose=False)
         print("Testing Accuracy:  {:.4f}".format(accuracy))
 
         #show the evolution of the praining in a asic plot
