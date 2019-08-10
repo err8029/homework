@@ -2,16 +2,15 @@
 
 
 **1. Describe text processing pipeline you have selected.**
-<<<<<<< HEAD
 - Statistical anlysis to determine the most used words, least used were also determined, but there are 6000 words aprox. with a 1 frequency. See the following figures for most used words:
 
 <p align="center">
-  <img src="distribution_plots/negative_reviews_dis_lemmatization.png" width="350" title="hover text">
+  <img src="freqdist_plots/negative_reviews_dis_lemmatization.png" width="550" title="hover text">
   <p align="center"> frequency distribution of words for negative reviews (categories obtained by lemmatization)</p>
 </p>
 
 <p align="center">
-  <img src="distribution_plots/positive_reviews_dis_lemmatization.png" width="350" title="hover text">
+  <img src="freqdist_plots/positive_reviews_dis_stemming.png" width="550" title="hover text">
   <p align="center"> frequency distribution of words for positive reviews (categories obtained by lemmatization)</p>
 </p>
 
